@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Tarea1",
+        "estado": "Terminado"
+    },
+    {
+        "titulo": "Tarea2",
+        "estado": "En proceso"
+    },
+    {
+        "titulo": "Tarea3",
+        "estado": "Pendiente"
+    },
+    {
+        "titulo": "Tarea4",
+        "estado": "En proceso"
+    },
+    {
+        "titulo": "Tarea5",
+        "estado": "pendiente"
+    }
+]

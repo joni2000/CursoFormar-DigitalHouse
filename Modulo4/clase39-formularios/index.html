@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <style>
+        .prueba::before {
+            content: "Contenido de prueba";
+            background-color: yellow;
+        }
+
+        h2::after {
+            content: " entre las 16 y las 18";
+        }
+
+        * {
+            user-select: none;
+        }
+
+        input {
+            background-color: aqua;
+        }
+        input[type="text"]{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="GET"> <!-- por default tiene GET -->
+        <label for="usuario">nombre: </label>
+        <input type="text" name="user" id="usuario" required><br>
+        <label for="dni">DNI: </label>
+        <input type="number" name="num" id="dni" value="0000" readonly><br>
+        <label for="pass">Contrasenia: </label>
+        <input type="password" name="passw" id="pass"><br>
+        <label for="date">Fecha de nacimiento: </label>
+        <input type="date" name="fecha" id="date"><br>
+        <label for="color">Color: </label>
+        <input type="color" name="color" id="color"><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email"><br>
+        
+        <label for="select">Genero: </label>
+        <select name="sexo" id="select">
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+            <option value="T">Transexual</option>
+            <option value="L">No Binario</option>
+            <input type="submit">
+        </select>
+
+        <textarea name="message" id="message" cols="30" rows="2" placeholder="Escriba su comentario"></textarea>
+
+        <input type="file" multiple accept="accept="image/png, image/jpeg">
+        
+        <!-- CheckBox -->
+        <br><br>
+        <h3>Mis hobbies</h3>
+        <label for="programar"><input id="programar" type="checkbox" name="hobbies" value="programar" checked>Programar</label><br>
+        <label for="dibujar"><input id="dibujar" type="checkbox" name="hobbies" value="dibujar">Dibujar</label><br>
+        <label for="jugar"><input id="jugar" type="checkbox" name="hobbies" value="jugar">Jugar</label><br>
+
+        <!-- radio button -->
+        <h3>Forma de pago</h3>
+        <label for="debito">Débito <input type="radio" name="pay" id="debito" value="debito" checked></label><br>        
+        <label for="credito">Crédito <input type="radio" name="pay" id="credito" value="Credito"></label><br>        
+        <label for="efectivo">Efectivo <input type="radio" name="pay" id="efectivo" value="efectivo"></label><br>
+        <button type="submit">Enviar formulario</button><br><br>
+        
+        <!-- datalist, campo vacio -->
+        <label>Choose a browser from this list:
+            <input list="browsers" name="myBrowser" /></label>
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Internet Explorer">
+              <option value="Opera">
+              <option value="Safari">
+              <option value="Microsoft Edge">
+            </datalist>
+
+            <hr><hr>
+            <div class="prueba"></div>
+            <h2>Comision 12 - la mejor y mas despierta</h2>
+    </form>
+</body>
+</html>

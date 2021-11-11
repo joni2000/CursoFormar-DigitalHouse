@@ -1,0 +1,159 @@
+@keyframes animacion1 {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+/* @keyframes animacion1 {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+} */
+
+div.animacion1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animacion1;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    border-radius: 0px 0 0px 0;
+    transition: border-radius 1s ease-in;
+}
+
+div.animacion1:hover {
+    border-radius: 20px 0 20px 0;
+}
+
+@keyframes animacion2 {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    0% {
+        background-color: blue;
+    }
+    0% {
+        background-color: green;
+    }
+}
+
+div.animacion2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: animacion2 4s 1; /* lo mismo que abajo */
+/*     animation-name: animacion2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+}
+
+/* The animation code */
+@keyframes animacion3 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px; height: 80px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+div.animacion3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: animacion3;
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+  }
+
+  /* ------------------------------------------- */
+
+  /* Burger Menu */
+/* ul{
+    display: none;
+}
+  
+input:checked ~ ul{
+    display:block;
+} */
+
+ul {
+    opacity: 0;
+    width: 50%;
+    position: absolute;
+    background-color: antiquewhite;
+    border-radius: 0 20px 20px 0;
+    padding: 50px;
+    transition: all 0.5s ease;
+}
+
+input:checked ~ ul{
+    opacity: 1;
+    width: 50%;
+}
+
+input {
+    display: none;
+}
+
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: lightblue;
+}
+
+input:checked ~ label {
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+
+ul{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+  
+}
+  
+  
+li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    width: 25%;
+    transition:all 1s ease-in-out;
+    cursor: pointer;
+}
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+      width: 50%;
+      filter: brightness(110%);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 0 20px 20px 0;
+}
+  

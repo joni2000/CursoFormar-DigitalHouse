@@ -1,0 +1,89 @@
+body {
+    padding-top: 5rem;
+}
+
+header {
+    height: 5rem;
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 90%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: beige;
+}
+
+
+.box {
+    background-color: aqua;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#top .box:nth-child(1) {
+    background-color: brown;
+}
+#top .box:nth-child(2) {
+    background-color: blue;
+    position: relative;
+    bottom: -1rem;
+}
+#top .box:nth-child(3) {
+    background-color: orange;
+    position: relative;
+    bottom: -2rem;
+}
+
+#top, #bottom {
+    display: flex;
+    align-items: center;
+}
+
+#top{
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#bottom{ 
+    flex-direction: column;
+    position: relative;
+    width: 75%;
+    background-color: paleturquoise;
+}
+
+#bottom .box:nth-child(1) {
+    background-color: yellow;
+}
+#bottom .box:nth-child(2) {
+    background-color: green;
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    right: 1rem;
+    top: -1rem;
+    border-radius: 50%;
+}
+#bottom .box:nth-child(3) {
+    background-color: blueviolet;
+}
+

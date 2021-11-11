@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto&display=swap');
+
+
+button {
+    width: 100px;
+    padding:0 25px;
+    height: 50px;
+}
+
+#button-danger {
+    background-color: tomato;
+}
+
+.button-primary {
+    background-color: teal;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+ul li a {
+    color: thistle;
+    font-style: inherit;
+}
+
+div {
+    height: 2rem;
+}
+
+h2 { 
+    color: lightcoral;
+    text-align: center;
+}
+
+h3 {
+    color: red;
+}
+
+.titulo-principal {
+    font-family: 'Ephesis', cursive;
+    text-transform: capitalize;
+}
+
+.titulo-secundario {
+    font-family: 'Roboto', sans-serif;
+}
+
+.caja_color {
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    background-color: green;
+}
+
+#caja1 {
+    background-color: rgba(54, 148, 54, 0.507);
+}
+
+#caja2 {
+    background-image: url('/clase28-CSS_introduccion/Naruto.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#caja3 {
+    background-color: hotpink;
+}
+
+#caja4 {
+    background-color: rgba(131, 21, 209, 0.5);
+}
+body {
+    background-image: url(/clase28-CSS_introduccion/Naruto.png);
+    background-size: 200px;
+    background-repeat: repeat-x;
+}
+
+section {
+    height: 300px;
+    background-color: indigo;
+    background-image: url('/clase28-CSS_introduccion/zorra.jfif');
+    background-attachment: fixed;
+}
